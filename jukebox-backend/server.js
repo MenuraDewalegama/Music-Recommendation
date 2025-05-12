@@ -4,14 +4,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
 const cors = require('cors'); 
-
+const http = require('http');
+const initSocket = require('./socket/socket');
 const app = express();
 const PORT = process.env.PORT || 3000;
 // Routes
 const authRoutes = require('./routes/authRoutes');
-
-// ✅ Apply CORS BEFORE any routes
-app.use(cors());
 
 // Middleware
 app.use(express.json());
@@ -35,8 +33,12 @@ mongoose.connection.on('error', (err) => {
 // Routes
 app.use('/api/auth', authRoutes);
 
+// Create server & socket connection
+const server = http.createServer(app);
+initSocket(server);
+
 // Start server
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
   console.log('Type Ctrl+C to shut down the web server');
 });
