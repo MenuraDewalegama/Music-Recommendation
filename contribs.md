@@ -31,3 +31,13 @@
 - I have implemented the recommendation logics for the songs using machine learning model like K-Means clustering and K Nearest Neighbours. I have done so for mood-based logic, song-based logic and playlist based logic.
 - I have added the code to insert and remove data from the dataset in Mongo Atlas (currently I have done it in Python for convenience, but I may change to JS based on requirements).
 - I have also developed the Flask application needed to work as the server to access the models whenever required (currently it is returning html files for my convenience, but this will be changed later while merging the codes).
+
+# Atish Gurung
+
+- Contributed to the development of a well-structured Software Requirements Specification (SRS) document by writing detailed sections on the product perspective and product functions
+- Create sequence diagram for user login and register functionality flow showing all components (User, Frontend, Backend, DB, JWT) with correct message and response structure.
+- Designed and implemented secure user authentication using both email/password and Spotify OAuth integration.
+- Built the complete user component following MVC architecture, including controller, route, model, and middleware layers.
+- Developed basic CRUD functionality for user accounts (get, update, delete) and ensured data security using token verification.
+- Maintained and updated the Trello board to track tasks, sprint progress, and backlog items — consistently moving cards through “To Do”, “In Progress”, and “Done” columns during Sprint 1
+- Collaborated with teammates through Git for version control by regularly committing changes, resolving merge conflicts, and reviewing pull requests.
