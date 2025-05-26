@@ -1,0 +1,4 @@
+/jukebox-backend/node_modules
+/jukebox-frontend/node_modules
+Dockerfile
+.dockerignore

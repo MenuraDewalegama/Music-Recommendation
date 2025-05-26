@@ -69,6 +69,12 @@ app.use('/api/playlists', playlistRoutes);
 app.use('/', viewRoutes);
 app.use('/api/playlist', collabPlaylistRoutes);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.get('/api/student', (req, res) => {
+  res.json({ 
+    "name": "Menura Pamodh Dewalegama",
+    "studentId": "224917579"
+  });
+});
 
 // WebSocket Chat
 require('./socket/chat')(io);
@@ -97,6 +103,6 @@ const PORT = process.env.PORT || 3000;
 //   });
 // }
 
-  server.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
-  });
+server.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
+});
