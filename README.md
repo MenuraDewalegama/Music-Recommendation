@@ -25,4 +25,6 @@ http://localhost:3000/api/student
 ```
 
 ## The /api/student output should look like.
-
+``` bash
+{"name":"Menura Pamodh Dewalegama","studentId":"224917579"}
+```
