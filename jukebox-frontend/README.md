@@ -49,3 +49,26 @@ JukeBox is a web-based music discovery and playlist-sharing app that helps users
 ```bash
 git clone https://github.com/Blitz17/Music-Recommendation 
 npm install
+```
+
+### Setup
+This is for installation of all modules
+```bash
+node jukebox-backend/setup.js
+```
+
+### Running
+Run the below command in one terminal
+```bash
+npm start
+```
+# or
+```bash
+node jukebox-backend/server.js
+```
+
+and the below command in another one
+```bash
+python jukebox-backend/recom_model/app.py
+```
+In total you will have 2 servers running
